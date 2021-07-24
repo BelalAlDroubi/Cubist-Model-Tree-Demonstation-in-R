@@ -52,6 +52,7 @@ MAE_lm
 # MAE = 10.46
 
 ##################### Cubist Model Tree #######################
+install.packages("Cubist")
 library(Cubist)
 mtree = cubist(train[,-2],train$efficacy, control = cubistControl(rules = 3))
 summary(mtree)
